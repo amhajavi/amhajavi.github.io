@@ -107,3 +107,86 @@
     color: inherit;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .academic-site {
+    text-align: left;
+  }
+  .academic-site .academic-contact-row {
+    padding-top: 18px;
+  }
+  .academic-site #header-top .top-contact {
+    justify-content: flex-start;
+  }
+  .academic-site nav {
+    padding: 0 18px;
+  }
+  .academic-brand {
+    line-height: 64px;
+  }
+  .hero-copy {
+    padding-right: 0;
+  }
+  .hero-copy h1 {
+    font-size: 56px;
+  }
+  .hero-copy h2 {
+    font-size: 25px;
+  }
+  .contact-panel,
+  .experience-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .academic-site .container {
+    width: 91%;
+  }
+  .academic-site nav {
+    border-radius: 18px;
+    padding: 0 16px;
+  }
+  .academic-hero {
+    padding: 28px 0 58px;
+  }
+  .hero-copy h1 {
+    font-size: 42px;
+  }
+  .hero-copy h2 {
+    font-size: 22px;
+  }
+  .hero-summary,
+  .academic-card p,
+  .publication-item p,
+  .experience-content p,
+  .contact-panel p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+  .academic-site .academic-btn {
+    min-width: 0;
+    width: 100%;
+  }
+  .profile-image {
+    height: 280px;
+  }
+  .academic-title h2,
+  .academic-card h3,
+  .publication-item h3,
+  .experience-content h3,
+  .contact-panel h2 {
+    font-size: 24px;
+  }
+  .academic-section {
+    padding: 68px 0;
+  }
+  .contact-panel,
+  .profile-panel-body,
+  .focus-panel,
+  .academic-card,
+  .publication-item,
+  .experience-item {
+    padding: 22px;
+  }
+}

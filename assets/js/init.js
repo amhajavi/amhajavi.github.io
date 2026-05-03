@@ -2,10 +2,12 @@
         "use strict";
         
         // NAV
+      if ($.fn.sideNav && $('.button-collapse').length) {
         $('.button-collapse').sideNav({
-            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-            }
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          }
         );
+      }
         
     /**************************************************************************
             Style demo
@@ -23,15 +25,21 @@
   
         
         // Portfolio fancybox
+    		if ($.fn.fancybox && $(".single_image").length) {
         $(".single_image").fancybox({
-			padding: 4,
-		});
+    			padding: 4,
+    		});
+    		}
 		
 		 //Portfolio 
+        if ($.fn.mixItUp && $('#portfolio-item').length) {
         $('#portfolio-item').mixItUp();
+        }
         
         // Sticky nav
+        if ($.fn.sticky && $("#sticky-nav").length) {
         $("#sticky-nav").sticky({topSpacing:0});
+        }
         
         //Skills
         $(".determinate").each(function(){
@@ -42,7 +50,9 @@
         });
             
         //Conatct
+        if ($.fn.material_select && $('select').length) {
         $('select').material_select();
+        }
         
         // Smooth Scroll
         $(function() {
@@ -62,6 +72,9 @@
         
         // Blog
         jQuery(window).on('load', function(){ var $ = jQuery;
+          if (!$.fn.masonry || !$('.blog').length) {
+            return;
+          }
             $('.blog').masonry({
               itemSelector: '.blog-post',
               columnWidth: '.blog-post',
@@ -71,6 +84,7 @@
         
         // Contact form
         
+        if ($.fn.validator && $("#contactForm").length) {
         $("#contactForm").validator().on("submit", function (event) {
             if (event.isDefaultPrevented()) {
               // handle the invalid form...
@@ -82,6 +96,7 @@
               submitForm();
             }
          });
+        }
 
 
         function submitForm(){
@@ -127,9 +142,13 @@
         }
         
         //Tooltip
+        if ($.fn.tooltip && $('.tooltipped').length) {
         $('.tooltipped').tooltip({delay: 50});
+        }
         
         //wow
+        if (typeof WOW !== 'undefined') {
         new WOW().init();
+        }
         
     });
