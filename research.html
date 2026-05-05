@@ -18,7 +18,6 @@
           <li><a href="research.html" class="active">Research</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="experience.html">Experience</a></li>
           <li><a href="blog.html">Blog</a></li>
         </ul>
       </nav>
@@ -31,45 +30,29 @@
 
     <main>
       <section class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Research agenda</p>
-          <h1>Research interests</h1>
-          <p>My work explores speech and audio systems that combine strong representations with practical engineering for real-world evaluation.</p>
+        <div class="section-heading section-heading-full">
+          <h1>Current Research interests</h1>
+          <p>I work on building systems that can carry speech directly from one voice to another, preserving not just words but timing, emotion, and nuance. At its core, this means treating speech as more than a sequence of tokens—it’s a continuous, expressive signal where prosody, rhythm, and subtle acoustic cues all matter. My work lives in the world of speech-to-speech models, where language isn’t reduced to text but retained in its full auditory richness. I’m particularly interested in how meaning and identity travel together through sound, and how models can capture both without flattening either. </p>
+
+          <p>A big part of my focus is acoustic replication: reconstructing voices with a level of fidelity that goes beyond intelligibility and into realism. This involves digging into representations that preserve speaker characteristics, intonation patterns, and the fine structure of audio. I spend a lot of time thinking about how to model these features efficiently while still allowing for flexibility and control. There’s a constant trade-off between compression and expressiveness, and exploring that balance is where things get interesting.</p>
+
+          <p>I also enjoy working on making generated speech feel less synthetic and more naturally produced, especially in edge cases like whispering, emphasis, or emotional shifts. These are the moments where models tend to break—and where the most insight can be gained. By probing these limits, I try to uncover better ways to represent and generate speech signals. Along the way, I experiment with architectures and training strategies that can better capture temporal dependencies and acoustic detail.</p>
+
+          <p>Ultimately, my goal is to push toward systems that don’t just generate speech, but communicate through it in a way that feels grounded and authentic. I’m interested in how far we can go in bridging the gap between human and machine-produced audio. And occasionally, I like to see if a model can surprise me—by saying something not just correctly, but convincingly.</p>
         </div>
         <div class="content-grid">
           <article class="focus-card">
-            <h2>Speech representation learning</h2>
-            <p>I study architectures that learn speaker and speech embeddings under limited-duration and noisy conditions.</p>
+            <h2>Speech-to-Speech Modeling</h2>
+            <p>Directly transforms input speech into output speech without collapsing it into text, preserving the continuous nature of the signal. This enables retention of prosody, timing, and speaker-specific nuances that are often lost in text-based pipelines.</p>
           </article>
           <article class="focus-card">
-            <h2>Robust recognition systems</h2>
-            <p>I develop models that preserve accuracy for short segments, mismatched environments, and realistic deployment scenarios.</p>
+            <h2>Acoustic Replication</h2>
+            <p>Focuses on reconstructing speech signals with high fidelity, capturing fine-grained details like timbre, pitch contours, and micro-prosodic variations. The goal is to produce audio that is not just intelligible, but perceptually indistinguishable from natural speech.</p>
           </article>
           <article class="focus-card">
-            <h2>Applied learning practice</h2>
-            <p>Reproducible data pipelines, transparent evaluation, and research engineering are central to my approach.</p>
+            <h2>Expressive Speech Synthesis</h2>
+            <p>Aims to generate speech that conveys emotion, emphasis, and speaking style in a controllable way. It goes beyond neutral narration to model how something is said, not just what is said.</p>
           </article>
-        </div>
-      </section>
-
-      <section class="section split-panel">
-        <div>
-          <h2>Core themes</h2>
-          <ul class="pill-list">
-            <li>Deep learning for audio</li>
-            <li>Speaker verification</li>
-            <li>Attention and representation</li>
-            <li>Speech disfluency analysis</li>
-            <li>Signal processing for ML</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Technical approach</h2>
-          <ol class="steps-list">
-            <li><strong>Define robust tasks.</strong> Start with realistic constraints and evaluation metrics.</li>
-            <li><strong>Build reproducible pipelines.</strong> Keep data, training, and analysis transparent.</li>
-            <li><strong>Translate to systems.</strong> Move from prototypes to stable research code.</li>
-          </ol>
         </div>
       </section>
     </main>
