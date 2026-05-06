@@ -22,8 +22,8 @@ Primary use:	CV/Resume, Portfolio, Perosnal Website
     7. PORTFOLIO
         7.1. MARKET PLACE
     8. EDUCATION
-    9. BLOG
-        9.1. BLOG FULL POST
+    9. POSTS
+        9.1. POST FULL PAGE
     10. PRICING TABLE
     11. CLIENTS
         11.1.  CLIENTS LOGO
@@ -557,73 +557,6 @@ nav .button-collapse i {
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 34px;
-}
-/*
-|----------------------------------------------------------------------------
-| BLOG
-|----------------------------------------------------------------------------
-*/
-#blog .section-title {
-  text-align: center;
-}
-#blog .post-title {
-  margin-top: -5px;
-  color: #ffffff;
-  padding: 30px;
-}
-#blog .post-title a {
-  text-decoration: none;
-}
-#blog .post-title a h2 {
-  margin: 0px;
-  font-size: 18px;
-  line-height: 30px;
-  color: #ffffff;
-}
-#blog .post-title a span {
-  opacity: 0.7;
-  color: #ffffff;
-}
-#blog .blog-post .thumbnail img {
-  width: 100%;
-  margin-bottom: -2px;
-}
-#blog #blog-post-1 {
-  background-color: #e95855;
-}
-#blog #blog-post-2 {
-  background-color: #707281;
-}
-#blog #blog-post-3 {
-  background-color: #564d52;
-}
-#blog #blog-post-4 {
-  background-color: #47bac9;
-}
-#blog #blog-post-5 {
-  background-color: #68c02e;
-}
-#blog #blog-post-6 {
-  background-color: #1abc9c;
-}
-#blog .post-details {
-  background-color: #ffffff;
-  padding: 30px;
-  margin-bottom: 24px;
-}
-#blog .post-details p {
-  color: #8a8a8b;
-}
-/*
-|----------------------------------------------------------------------------
-| FULL BLOG POST
-|----------------------------------------------------------------------------
-*/
-.full-post {
-  margin-top: 20px;
-}
-.full-post .blog-details {
-  padding: 20px;
 }
 .full-post .thumbnail img {
   width: 100%;

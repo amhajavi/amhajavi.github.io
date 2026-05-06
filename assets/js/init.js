@@ -70,18 +70,6 @@
           });
         });
         
-        // Blog
-        jQuery(window).on('load', function(){ var $ = jQuery;
-          if (!$.fn.masonry || !$('.blog').length) {
-            return;
-          }
-            $('.blog').masonry({
-              itemSelector: '.blog-post',
-              columnWidth: '.blog-post',
-              percentPosition: true
-            });
-        });
-        
         // Contact form
         
         if ($.fn.validator && $("#contactForm").length) {
